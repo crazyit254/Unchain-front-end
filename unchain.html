@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unchain — Break Free. Reclaim Your Life.</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="unchain.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav id="nav">
+      <a href="#" class="logo">
+        <div class="logo-mark">4</div>
+        <span class="logo-text">Unchain</span>
+      </a>
+      <ul class="nav-center">
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="#" class="nav-login">Log in</a>
+        <button class="btn-nav" onclick="openModal()">Join Free</button>
+        <button
+          class="hamburger"
+          id="hamburger"
+          onclick="toggleMenu()"
+          aria-label="Menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="#how" onclick="toggleMenu()">How It Works</a></li>
+        <li><a href="#features" onclick="toggleMenu()">Features</a></li>
+        <li><a href="#pricing" onclick="toggleMenu()">Pricing</a></li>
+        <li><a href="#" onclick="toggleMenu()">Log in</a></li>
+      </ul>
+      <div class="mobile-menu-cta">
+        <button
+          class="btn-nav"
+          onclick="
+            openModal();
+            toggleMenu();
+          "
+        >
+          Join Free — No Name Required
+        </button>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg-orb orb1"></div>
+      <div class="hero-bg-orb orb2"></div>
+      <div class="hero-inner">
+        <!-- Text side -->
+        <div>
+          <div class="hero-eyebrow reveal">
+            <span class="live-dot"></span>
+            400+ people already on their journey
+          </div>
+          <p class="hero-hook reveal reveal-d1">
+            <strong>
+              You already know something needs to change.<br />
+              You just need a way to start the journey to freedom,<br />The
+              Unchain Journey.
+            </strong>
+          </p>
+          <h1 class="reveal reveal-d2">
+            Break Free.<br />
+            Reclaim Your<br />
+            <span class="h1-green"
+              ><span class="h1-underline">Future.</span></span
+            >
+          </h1>
+          <p class="hero-sub reveal reveal-d2">
+            Unchain is a safe, anonymous platform helping youths who are ready
+            for it overcome digital addiction — through therapy, community, and
+            science-backed tools.
+          </p>
+          <div class="hero-ctas reveal reveal-d3">
+            <button class="btn-main" onclick="openModal()">
+              Start Free — Stay Anonymous →
+            </button>
+            <a href="#how" class="btn-ghost">See How It Works</a>
+          </div>
+          <div class="trust-row reveal reveal-d3">
+            <div class="trust-faces">
+              <div class="face f1">JM</div>
+              <div class="face f2">AW</div>
+              <div class="face f3">KO</div>
+              <div class="face f4">MN</div>
+              <div class="face f5">+</div>
+            </div>
+            <span class="trust-label"
+              ><strong>2,400 youths</strong> already healing</span
+            >
+          </div>
+        </div>
+        <!-- Phone mockup -->
+        <div class="hero-phone-wrap reveal reveal-d2">
+          <div class="phone-frame">
+            <div class="phone-notch"><div class="notch-pill"></div></div>
+            <div class="phone-screen">
+              <div class="phone-header">
+                <div class="phone-header-left">
+                  <div class="ph-avatar">JM</div>
+                  <div>
+                    <div class="ph-name">FreedomSeeker</div>
+                    <div class="ph-sub">Day 21 of your journey</div>
+                  </div>
+                </div>
+                <div class="streak-badge">🔥 21</div>
+              </div>
+              <div class="phone-card">
+                <div class="pc-label">Recovery Progress</div>
+                <div class="pc-value">68%</div>
+                <div class="pc-caption">
+                  Week 3 — you're past the hardest part
+                </div>
+                <div class="mini-bar"><div class="mini-fill"></div></div>
+              </div>
+              <div class="phone-row">
+                <div class="phone-mini">
+                  <div class="pm-icon">🧘</div>
+                  <div class="pm-val">3</div>
+                  <div class="pm-lab">Sessions done</div>
+                </div>
+                <div class="phone-mini">
+                  <div class="pm-icon">👥</div>
+                  <div class="pm-val">12</div>
+                  <div class="pm-lab">Group peers</div>
+                </div>
+              </div>
+              <div class="phone-cta-strip">
+                <div>
+                  <div class="pcs-text">Daily check-in ready</div>
+                  <div class="pcs-sub">5 min · builds your streak</div>
+                </div>
+                <div class="pcs-arrow">→</div>
+              </div>
+            </div>
+          </div>
+          <div class="float-badge fb1">
+            <div class="fb-icon">🔒</div>
+            <div>
+              <div class="fb-text">100% Anonymous</div>
+              <div class="fb-sub">No real name needed</div>
+            </div>
+          </div>
+          <div class="float-badge fb2">
+            <div class="fb-icon">✅</div>
+            <div>
+              <div class="fb-text">Therapist verified</div>
+              <div class="fb-sub">Licensed professionals</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats-strip">
+      <div class="stats-inner">
+        <div class="stat-item reveal">
+          <div class="stat-num">70%</div>
+          <div class="stat-label">Report reduced distress within 3 months</div>
+        </div>
+        <div class="stat-item reveal reveal-d1">
+          <div class="stat-num">5,000+</div>
+          <div class="stat-label">Kenyans reached in year one</div>
+        </div>
+        <div class="stat-item reveal reveal-d2">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Anonymous — no real name, ever</div>
+        </div>
+        <div class="stat-item reveal reveal-d3">
+          <div class="stat-num">Ksh 0</div>
+          <div class="stat-label">To start — free tier always available</div>
+        </div>
+      </div>
+    </div>
+    <div class="green-to-cream"></div>
+
+    <!-- HOW IT WORKS -->
+    <div id="how" class="section-wrap">
+      <div class="reveal"><div class="kicker">The Process</div></div>
+      <h2 class="sec-title reveal">Three steps to breaking free</h2>
+      <p class="sec-sub reveal">
+        No judgment. No shame. Just a clear, supported path forward — from your
+        phone.
+      </p>
+      <div class="how-steps reveal">
+        <div class="how-step">
+          <div class="uyhhyystep-left">
+            <div class="step-num">01</div>
+            <div class="step-line"></div>
+          </div>
+          <div class="step-content">
+            <div class="step-title">Join Anonymously</div>
+            <div class="step-desc">
+              Create an account with just a username. No real name, no phone
+              number, no judgment. Your privacy is our first commitment — you
+              control everything you share.
+            </div>
+            <span class="step-tag">🔒 Takes 60 seconds</span>
+          </div>
+        </div>
+        <div class="how-step">
+          <div class="step-left">
+            <div class="step-num">02</div>
+            <div class="step-line"></div>
+          </div>
+          <div class="step-content">
+            <div class="step-title">Get Your Personal Plan</div>
+            <div class="step-desc">
+              Take a short private assessment. We match you to therapists, peer
+              groups, courses, and activities tailored exactly to your situation
+              — no generic advice.
+            </div>
+            <span class="step-tag">🎯 Personalized to you</span>
+          </div>
+        </div>
+        <div class="how-step">
+          <div class="step-left">
+            <div class="step-num">03</div>
+            <div class="step-line"></div>
+          </div>
+          <div class="step-content">
+            <div class="step-title">Grow Every Single Day</div>
+            <div class="step-desc">
+              Track streaks, attend sessions, connect with your accountability
+              partner. We suggest healthy dopamine alternatives — from local
+              sports to creative outlets — matched to you.
+            </div>
+            <span class="step-tag">📈 Real, measurable change</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURES -->
+    <div id="features" class="features-bg">
+      <div style="max-width: 1100px; margin: 0 auto">
+        <div class="reveal"><div class="kicker">What You Get</div></div>
+        <h2 class="sec-title reveal">
+          Everything you need — in one safe space
+        </h2>
+        <p class="sec-sub reveal">
+          Therapy, community, tools, and accountability built not for your wants
+          but for what you truly need.
+        </p>
+        <div class="features-grid reveal">
+          <div class="feat-card">
+            <div class="feat-icon-wrap fi-green">🧑‍⚕️</div>
+            <div class="feat-title">Anonymous Therapy</div>
+            <div class="feat-desc">
+              Connect with certified therapists by text or voice. Affordable
+              sessions billed per-minute. No face shown, no name given — just
+              honest, professional support.
+            </div>
+            <span class="feat-tag">Pay per minute · Ksh 5–15/min</span>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon-wrap fi-sun">🎓</div>
+            <div class="feat-title">Evidence-Based Courses</div>
+            <div class="feat-desc">
+              Short, practical courses built on CBT and mindfulness research.
+              Understand the neuroscience of addiction and rewire habits with
+              methods that are proven to work.
+            </div>
+            <span class="feat-tag">10–20 min lessons · Learn at your pace</span>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon-wrap fi-sky">👥</div>
+            <div class="feat-title">Peer Support Community</div>
+            <div class="feat-desc">
+              Anonymous group chats moderated by trained peers. Accountability
+              partners, shared milestones, and a community that truly
+              understands what you're going through.
+            </div>
+            <span class="feat-tag">Always moderated · Safe space</span>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon-wrap fi-stone">⚡</div>
+            <div class="feat-title">Healthy Alternatives Engine</div>
+            <div class="feat-desc">
+              AI-powered suggestions for dopamine-healthy activities — football
+              leagues near you, creative writing groups, side hustle courses —
+              matched to your interests and Nairobi location.
+            </div>
+            <span class="feat-tag">Location-aware · Kenya-specific</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TESTIMONIALS -->
+    <div class="testi-section">
+      <div style="max-width: 1100px; margin: 0 auto">
+        <div class="reveal"><div class="kicker">Real Stories</div></div>
+        <h2 class="sec-title reveal">Lives being changed, one day at a time</h2>
+        <div class="testi-grid">
+          <div class="testi-card reveal">
+            <div class="stars">
+              <span class="star">★</span><span class="star">★</span
+              ><span class="star">★</span><span class="star">★</span
+              ><span class="star">★</span>
+            </div>
+            <div class="testi-text">
+              "I had tried everything alone for two years. Unchain gave me a
+              community that understood without judging. 60 days clean and my
+              focus at university has never been sharper."
+            </div>
+            <div class="testi-author">
+              <div class="testi-avatar">
+                <div class="av-pattern av1">JM</div>
+              </div>
+              <div>
+                <div class="testi-name">James M.</div>
+                <div class="testi-role">University Student, Nairobi</div>
+                <div class="verified">✓ Verified member</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card reveal reveal-d1">
+            <div class="stars">
+              <span class="star">★</span><span class="star">★</span
+              ><span class="star">★</span><span class="star">★</span
+              ><span class="star">★</span>
+            </div>
+            <div class="testi-text">
+              "The anonymous therapy was a game changer. I could finally be
+              completely honest without fear. My therapist helped me understand
+              the root cause, not just manage the symptom."
+            </div>
+            <div class="testi-author">
+              <div class="testi-avatar">
+                <div class="av-pattern av2">AK</div>
+              </div>
+              <div>
+                <div class="testi-name">Akinyi K.</div>
+                <div class="testi-role">Young Professional, Mombasa</div>
+                <div class="verified">✓ Verified member</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card reveal reveal-d2">
+            <div class="stars">
+              <span class="star">★</span><span class="star">★</span
+              ><span class="star">★</span><span class="star">★</span
+              ><span class="star">★</span>
+            </div>
+            <div class="testi-text">
+              "I joined as a complete skeptic. Within 2 weeks the daily
+              check-ins and alternative activity suggestions replaced the old
+              habit. Now I coach football every Saturday morning."
+            </div>
+            <div class="testi-author">
+              <div class="testi-avatar">
+                <div class="av-pattern av3">BO</div>
+              </div>
+              <div>
+                <div class="testi-name">Brian O.</div>
+                <div class="testi-role">25 years old, Kisumu</div>
+                <div class="verified">✓ Verified member</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRICING -->
+    <div id="pricing" class="pricing-section">
+      <div style="max-width: 900px; margin: 0 auto">
+        <div class="reveal"><div class="kicker">Pricing</div></div>
+        <h2 class="sec-title reveal">Affordable for every Kenyan</h2>
+        <p class="sec-sub reveal">
+          Recovery shouldn't be locked behind a paywall. Start completely free —
+          upgrade only when you're ready.
+        </p>
+        <div class="pricing-grid reveal">
+          <div class="price-card">
+            <div class="price-plan">Free</div>
+            <div class="price-amount">Ksh 0</div>
+            <div class="price-period">forever, no card needed</div>
+            <div class="price-divider"></div>
+            <ul class="price-features">
+              <li>
+                <div class="pf-check">✓</div>
+                Anonymous account
+              </li>
+              <li>
+                <div class="pf-check">✓</div>
+                Daily check-ins & streak tracking
+              </li>
+              <li>
+                <div class="pf-check">✓</div>
+                2 community sessions/month
+              </li>
+              <li>
+                <div class="pf-check">✓</div>
+                3 intro courses
+              </li>
+              <li>
+                <div class="pf-check">✓</div>
+                Basic activity suggestions
+              </li>
+            </ul>
+            <button class="btn-price" onclick="openModal()">
+              Get Started Free
+            </button>
+          </div>
+          <div class="price-card featured">
+            <div class="popular-tag">MOST POPULAR</div>
+            <div class="price-plan">Journey</div>
+            <div class="price-amount">Ksh 499</div>
+            <div class="price-period">per month · cancel anytime</div>
+            <div class="price-divider"></div>
+            <ul class="price-features">
+              <li>
+                <div class="pf-check">✓</div>
+                Everything in Free
+              </li>
+              <li>
+                <div class="pf-check">✓</div>
+                Unlimited group sessions
+              </li>
+              <li>
+                <div class="pf-check">✓</div>
+                Full 20+ course library
+              </li>
+              <li>
+                <div class="pf-check">✓</div>
+                Accountability partner matching
+              </li>
+              <li>
+                <div class="pf-check">✓</div>
+                Affordable therapy (pay per min)
+              </li>
+              <li>
+                <div class="pf-check">✓</div>
+                Personalized activity matching
+              </li>
+            </ul>
+            <button class="btn-price" onclick="openModal()">
+              Start Journey
+            </button>
+          </div>
+          <div class="price-card">
+            <div class="price-plan">Intensive</div>
+            <div class="price-amount">Ksh 1,499</div>
+            <div class="price-period">per month · includes therapy</div>
+            <div class="price-divider"></div>
+            <ul class="price-features">
+              <li>
+                <div class="pf-check">✓</div>
+                Everything in Journey
+              </li>
+              <li>
+                <div class="pf-check">✓</div>
+                4 dedicated sessions/month
+              </li>
+              <li>
+                <div class="pf-check">✓</div>
+                Priority therapist matching
+              </li>
+              <li>
+                <div class="pf-check">✓</div>
+                Family support module
+              </li>
+              <li>
+                <div class="pf-check">✓</div>
+                Mountain retreat access
+              </li>
+            </ul>
+            <button class="btn-price" onclick="openModal()">
+              Go Intensive
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="faq-section">
+      <div class="reveal"><div class="kicker">FAQ</div></div>
+      <h2 class="sec-title reveal">Common questions</h2>
+      <div style="margin-top: 2rem">
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Is my identity really anonymous? <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            Yes — completely. We never ask for your real name, ID, or phone
+            number. Your username is all we know you by. Even our therapists
+            only see your username and what you choose to share in sessions.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            How much does therapy actually cost? <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            Therapy sessions are billed per minute at Ksh 5–15/min depending on
+            the therapist. A typical 30-minute session costs Ksh 150–450 —
+            significantly cheaper than a traditional private session in Nairobi.
+            The Journey plan gives you access to the booking system; Intensive
+            includes 4 full sessions per month.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            What if I relapse? Will I be judged? <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            Absolutely not. Relapse is a normal part of recovery — it doesn't
+            mean failure. Your streak resets, and the app helps you understand
+            what triggered it and how to move forward. Our community is built
+            around compassion, not shame.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Is this only for men? <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            Not at all. While digital addiction disproportionately affects young
+            men, Unchain is designed for all genders. We have therapists and
+            peer groups for everyone, and the platform personalizes content
+            regardless of your background or identity.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Can I pay via M-Pesa? <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            Yes — M-Pesa is our primary payment method. We also accept Airtel
+            Money and standard card payments. No foreign payment methods
+            required.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA BAND -->
+    <div class="cta-band">
+      <h2>
+        The best day to start<br />was yesterday.<br />Today is a second chance.
+      </h2>
+      <p>Join thousands of youths already on their journey to freedom.</p>
+      <button class="btn-white" onclick="openModal()">
+        Join Unchain for Free →
+      </button>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="footer-logo-text">
+              <div
+                class="logo-mark"
+                style="
+                  width: 30px;
+                  height: 30px;
+                  font-size: 0.85rem;
+                  border-radius: 8px;
+                "
+              >
+                U
+              </div>
+              Unchain
+            </div>
+            <p class="footer-tagline">
+              Breaking digital addiction. Building better futures for youths,
+              one day at a time.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h5>Platform</h5>
+            <ul>
+              <li><a href="#">How It Works</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Therapy</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Company</h5>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Legal</h5>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span class="footer-copy"
+            >© 2024 Unchain Kenya · All rights reserved.</span
+          >
+          <span class="footer-heart"
+            >You are not alone.<br />Stay guard in the doors of your
+            minds.</span
+          >
+        </div>
+      </div>
+    </footer>
+
+                                          
+    <script src="unchain.js"></script>
+  </body>
+</html>
