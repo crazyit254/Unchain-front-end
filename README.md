@@ -13,11 +13,6 @@ Unchain was frist thought of by Johnson.C.Mwangi
 1. Restuctutre the society to social cohesiveness through socialization.
 1. provide possible solutions and way out of such addiction.
 
-#### Block quote
-
-> " If I'm in an illusion then I must admit its a well and carefull orchestrayed orchestra. "  
-> -- _Johnson.c.Mwangi_
-
 ### Unorerd lists
 
 #### Who's [**Unchain**](#unchains-philosophy) going to help?
@@ -25,10 +20,6 @@ Unchain was frist thought of by Johnson.C.Mwangi
 - explicit content addicts.
 - General internet addicts.
 - Society at large.
-
-### Embeding an Image.
-
-[![Unchain founder](./man-in-black.png)](#founder)
 
 <h2 style="color:orange; font-family:monospace ;">Founder</h2>
 <details>
